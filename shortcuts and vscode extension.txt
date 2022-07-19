@@ -1,0 +1,15 @@
+Shortcuts
+formatting: ctrl + shift + f
+word wrap: alt + z
+
+VS Code Extension:
+Live Server
+Auto Rename Tag
+Auto Close Tag
+Prettier
+
+git link1:
+https://github.com/NeetishRaj/dreamers_batch
+
+git link2:
+https://github.com/NeetishRaj/dreamers_batch/blob/7-Jul-CSS-Part-1-Box-Model-Display-Position/topics.txt
