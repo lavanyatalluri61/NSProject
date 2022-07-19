@@ -1,0 +1,59 @@
+viewport
+	concept
+	use of <meta name="viewport" content="width=device-width, initial-scale=1">
+
+css units
+	absolute units
+	  px(most used)
+	  in
+	  cm
+	  mm
+	  pt
+
+relative units:
+	%(relative to parent)
+	vw(viewport (screen) width)
+	vh(viewport (screen) height)
+	vmin(viewports smaller dimension i.e; height or width)
+for mobile:
+	100vmin=100vw
+for laptops:
+100vmin = 100vh
+	vmax(viewports larger dimension i.e; height or width)
+for mobile:
+	100vmin=100vh
+for laptops:
+100vmin = 100vw
+	em(relative to font-size of element)
+	rem(relative to font-size of root element)
+
+media queries
+	media types
+	  all
+	  print
+ 	  screen (relevant for us)
+	  speech
+
+#######################################################
+Important questions:
+1. how can we make an existing webste responsive?
+by doing these things:
+	we can use responsive units like %, vw, vh, em, rem
+	we can use flexbox or gridbox to make the layout responsive.
+	we can use media queries to write customize css for specific screen sizes
+	we can use popular css libraries like bootstrap to make the website responsive.
+
+2. how to make a div as circle?
+border-radius: 50%
+
+3. write media query for the following targetting thin mobile devices and wide screens?
+	i. thin mobile devices
+	ii. wide screens
+A. thin mobile devices
+	@media only screen and (max-width: 480px) {
+/*all the css for phones inside here*/
+}
+wide screens
+	@media only screen and (min-width: 1024px) {
+/*all the css for wide screens inside here*/
+}

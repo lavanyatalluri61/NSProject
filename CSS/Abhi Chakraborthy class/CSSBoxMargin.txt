@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+          p {
+              border: 1px orangered;
+              border-style: dashed;
+          }
+          .marginOne{
+              margin: 10px
+
+          }
+          .marginTwo{
+              margin: 10px 20px;
+            }
+          .marginThree{
+              margin: 10px 20px 30px;
+              
+            }
+          .marginFour{
+              margin: 10px 20px 30px 40px;
+              
+            }
+          .marginBlue{
+              margin-top: 50px; 
+              margin-right: 20px;
+              margin-bottom: 50px;
+              border: 1px solid blue
+          }
+          .marginGreen{
+              margin-top: 80px;
+              margin-left: 30px;
+              border: 1px solid green
+          }
+
+        </style>
+    </head>
+    <body>
+       <p class="marginOne">This paragraph is with Margin one</p>
+       <p class="marginTwo">This paragraph is with Margin two</p>
+       <p class="marginThree">This paragraph is with Margin three</p>
+       <p class="marginFour">This paragraph is with Margin four</p>
+       <p class="marginBlue">This paragraph is with Margin Blue</p>
+       <p class="marginGreen">This paragraph is with Margin Green</p>
+    </body>
+</html>

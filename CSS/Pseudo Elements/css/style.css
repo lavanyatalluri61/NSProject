@@ -1,0 +1,20 @@
+body {
+    padding: 50px;
+    font-size: larger;
+}
+div::before {
+    content:'-';
+}
+div::after {
+    content:'.';
+}
+p::first-letter {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+p::first-line {
+    font-style: italic;
+}
+p::selection {
+    background-color:yellow;
+}

@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            * {
+                /* border: 1px solid red; */
+                box-sizing: border-box;
+            }
+            body {
+                padding: 20px;
+            }
+            div {
+                padding: 5px;
+            }
+            /* Group and Tag Selector */
+            /* p, div {
+                border: 1px solid red;
+            } */
+            /* Class Selector */
+            /* .container {
+                border: 1px solid red;
+            }
+            /* ID selector 
+            #para {
+                border: 1px solid red;
+            } */
+            /* Child Combinator */
+            body div {
+                /* select all the divs inside body */
+                /* border: 1px solid red; */
+            }
+            /* Immediate child combinator */
+            /* select only the immediate div childs inside body */
+            /* body > div {
+                border: 1px solid red;
+            } */
+            /* all sibling selector*/
+            /* .container ~ div {
+                border: 1px solid red;
+            } */
+            /* Immediate sibling selector */
+            /* .container + div {
+                border: 1px solid red;
+            } */
+            /* div > div {
+                border: 1px solid red;
+            } */
+            /*pseudo class*/
+            div:hover {
+                /* border: 1px solid red;
+                background-color: skyblue;
+                /* transform: scale(2) 
+                font-size: 20px; */
+            }
+            :root {
+                /* background-color: rgb(112, 98, 138); */
+            }
+            div:first-child {
+                /* border: 1px solid red; */
+            }
+            div:last-child {
+                /* border: 1px solid red; */
+            }
+            p:only-child {
+                /* border: 1px solid red; */
+            }
+            div:nth-child(2) {
+                /* border: 1px solid red; */
+            }
+            /* select all even position divs*/
+            div:nth-child(2n) {
+                /* border: 1px solid red; */
+
+            }
+            /* select all odd position divs*/
+            div:nth-child(2n+1) {
+                /* border: 1px solid red; */
+            }
+            div:nth-last-child(3) {
+                /* border: 1px solid red; */
+            }
+            p:not(#para) {
+                /* border: 1px solid red; */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div>
+                <p>This a paragraph</p>
+                <p>This is also a paragraph</p>
+            </div>
+            <div>
+                <p id = "para">Paragraph with id para</p>
+
+            </div>
+            <div>Div3</div>
+            <div>Div4</div>
+            <div>Div5</div>
+            <div>Div6</div>
+            <div>Div7</div>
+            <div>Div8</div>
+            <div>Div9</div>
+            <div>Div10</div>
+        </div>
+        <div>
+            First Sibling Div
+        </div>
+        <div>
+            Second Sibling Div
+        </div>
+    </body>
+</html>

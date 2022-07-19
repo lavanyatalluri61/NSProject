@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            button {
+                margin: 50px;
+                width: 200px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            button:hover {
+                /* animation: shake 0.3s ease-in-out; */
+                animation: zoom_effect 1s ease-in-out 1 alternate;
+            }
+            @keyframes shake {
+                0% {
+                    transform: rotateZ(0deg);
+                }
+                20% {
+                    transform: rotateZ(-20deg);
+                }
+                40% {
+                    transform: rotate(20deg);
+                }
+                60% {
+                    transform: rotateZ(-10deg);
+                }
+                80% {
+                    transform: rotateZ(10deg);
+                }
+                100% {
+                    transform: rotateZ(0deg)
+                }
+            }
+            @keyframes zoom_effect {
+                from {
+                    transform: scale(1);
+                }
+                to {
+                    transform: scale(1.2);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click Me</button>
+    </body>
+</html>

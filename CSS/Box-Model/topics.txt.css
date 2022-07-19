@@ -1,0 +1,95 @@
+/* CSS part1: Box Model, Display, Position
+###################################
+
+Box Model
+    width 
+    height 
+    margin 
+    padding 
+    border 
+    box-sizing 
+    how to study box model in chrome dev tools?
+
+Display 
+    block 
+    inline 
+    flex
+    grid
+
+Position 
+    static 
+    relative 
+    absolute 
+    fixed 
+    sticky
+
+Important Points
+######################### */
+
+1. What is difference between div and span?
+1. Div is block(takes complete width) and 
+span is inline(takes only content width 
+and stays on the same line)
+2. Cannot control the height and width of the span
+3. you can apply width and height to div but not to span
+
+2. how can we position a div in center using margin?
+using margin: auto
+
+3. what is the purpose of this piece of css code?
+* {
+    box-sizing: border-box;
+}
+to make sure that all the HTML elements do not exceed their allocated width/height of padding, border.
+
+4. F12: to open elemts section in chrome
+
+5. what is the difference between diplay:none and visibility: hidden?
+display: none --> remove the element and doesn't take up the space 
+visibility: hidden --> remove the element and takes the space 
+
+6. what is the display: inline
+This makes the div behaves like a span 
+
+7. Normal Flow of the document: poistion static | relative
+
+8. When you change the position from static to anything else then only use use these properties
+top 
+bottom
+left
+right 
+z-index 
+
+9. What is the us of position attribute and whar are its requirements?
+It is used for overlaying HTML elements on top of another HTML element 
+
+10. How is position absolute used?
+Its a 3 step process 
+i. We need a poition: relative container (HTML element will be overlayed on top of this)
+ii. we need to make position: absolute for the overlayed HTML element. 
+iii. we position the overlayed item relative to the container using these properties. 
+     - top 
+     - bottom 
+     - left 
+     - right 
+     - z-index 
+
+/* ##################################
+Topics need to cover
+css selectors
+combinations
+HTML Colors
+    rgb()
+    #FFFFF
+    rgba(200,200,198,0.5) 
+    hsl()
+Text-formatting
+    font-size
+    text-align
+Image related css
+    filter
+    object-fit
+    */
+
+
+

@@ -1,0 +1,44 @@
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <style>
+            div.container {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                position: relative; 
+                margin: 100px;
+            }
+            div.child {
+                width: 50px;
+                height: 50px;
+                background-color: green;
+                margin: 10px;
+                /* opacity: 50%; */
+            }
+            #absoluteDiv {
+                border: 2px solid blue;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 12;
+            }
+            #anotherAbsoluteDiv {
+                position: absolute;
+                top:20px;
+                right: 20px;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+       <div class = "container">
+        <div class = "child"></div>
+        <div class = "child" id = "anotherAbsoluteDiv"></div>
+        <div class = "child" id = "absoluteDiv">
+            <img src = "edge.PNG" width="50px" height="50px" alt = "Dog image">
+        </div>
+       </div>
+        
+    </body>
+</html>

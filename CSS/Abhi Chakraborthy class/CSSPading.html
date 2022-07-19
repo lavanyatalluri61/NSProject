@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            p {
+                border: 1px solid orangered
+            }
+            .with-padding {
+                padding: 10px;
+                background-color: skyblue;
+
+            }
+            .without-padding {
+                padding: 0px;
+                background-color: tomato;
+            }
+            .different-padding {
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                background-color: powderblue;
+            }
+            .paddingTwo {
+                padding: 10px 20px;
+            }
+            .paddingThree {
+                padding: 10px 20px 30px;
+            }
+            .paddingFour {
+                padding: 10px 20px 30px 40px;
+            }
+            .parentDiv {
+                padding: 30px;
+                background-color: red;
+            }
+            .childP {
+                padding: inherit;
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "with-padding">The paragraph with padding</p>
+        <p class = "without-padding">The paragraph without padding</p>
+        <p class = "different-padding">The paragraph different padding</p>
+        <p class = "paddingTwo">The paragraph paddingTwo</p>
+        <p class = "paddingThree">The paragraph paddingThree</p>
+        <p class = "paddingFour">The paragraph paddingFour</p>
+        <div class = "parentDiv">
+            <p class = "childP">this paragraph is inside parent division</p>
+        </div>
+    </body>
+</html>

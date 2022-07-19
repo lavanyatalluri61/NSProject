@@ -1,0 +1,32 @@
+topics:
+animation @keyframes
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-delay
+	
+	
+	transform-origin()
+
+
+	perspective(n)
+	matrix()
+
+assignments:
+button shake effects
+tilted div background but not the text
+
+###########################################
+Important Notes:
+1. Does css transfor functions affect box model properties?
+No, it doesn't. Therefore we can safely use them without affecting the spacing of other neighbouring elements.
+
+2. in browsers upside is -y and down is +y
+
+3. how much transition-duration is usually suggested for UI effects?
+Usually 200-300ms works best.
+
+4. when should we use % format in @keyframes instead of from-to format?
+whenever we want multiple steps in the animation.
+
+https://github.com/NeetishRaj/dreamers_batch/tree/15-Jul-CSS-Part-5-Transform-Transition-Animations

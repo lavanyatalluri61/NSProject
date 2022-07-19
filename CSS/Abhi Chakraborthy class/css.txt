@@ -1,0 +1,3 @@
+id -- 1st preference
+class -- 2nd preference
+element styling-- 3rd preference

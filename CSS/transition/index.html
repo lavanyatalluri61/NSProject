@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            img, div {
+                width: 150px;
+                height: 150px;
+                margin: 30px;
+                background-color: red;
+                /* transition: width 1s linear, 
+                height 1s linear;  */
+                transition: all 1s linear;
+                transition-timing-function: ease-in-out;
+            }
+            img:hover, div:hover {
+                width: 300px;
+                height: 300px;
+                transform: rotateY(180deg) 
+                rotate(360deg);
+                /* transform: scaleX(2); */
+            }
+        </style>
+    </head>
+    <body>
+        <img src = "dogs.jpg" alt = "Dog Image">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolovel?
+        </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+        .item2 {
+            grid-area: menu;
+        }
+        .item3 {
+            grid-area: main;
+        }
+        .item4 {
+            grid-area: right;
+        }
+        .item5 {
+            grid-area: footer;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+            'header header header header header  header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+            gap: 2px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        body {
+            /* background-color: lightgrey;
+            display: flex;
+            justify-content: center; */
+            -webkit-scrollbar: red yellow;
+        }
+        body::-webkit-scrollbar {
+            background-color: red;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: aqua;
+        }
+        .secondContainer {
+            border-radius: 50px;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            background-color: lightcoral;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Concept</h1>
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Obcaecati maiores 
+        esse ducimus perspiciatis atque officiis 
+        pariatur accusantium dolorum quod, 
+        repellendus ipsa facere? Laboriosam 
+        praesentium nobis natus labore expedita 
+        architecto maxime.</p>
+    <div class = "grid-container">
+        <div class = "item1">Header</div>
+        <div class = "item2">Menu</div>
+        <div class = "item3">Main</div>
+        <div class = "item4">Right</div>
+        <div class = "item5">Footer</div>
+    </div>  
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Obcaecati maiores 
+        esse ducimus perspiciatis atque officiis 
+        pariatur accusantium dolorum quod, 
+        repellendus ipsa facere? Laboriosam 
+        praesentium nobis natus labore expedita 
+        architecto maxime.</p>
+    <div class = "secondContainer">secondContainer</div>
+    <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Obcaecati maiores 
+            esse ducimus perspiciatis atque officiis 
+            pariatur accusantium dolorum quod, 
+            repellendus ipsa facere? Laboriosam 
+            praesentium nobis natus labore expedita 
+            architecto maxime.</p> 
+</body>
+</html>

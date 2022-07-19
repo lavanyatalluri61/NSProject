@@ -1,0 +1,37 @@
+p {
+  color: green;
+  background-color: gold;
+  width : 400px;
+}
+
+#head1 {
+       color: yellow;
+      }
+
+#head2 {
+       font-size : 40px;
+     }
+
+#div1 {
+       color: rgb(255,0,0);
+     }
+
+#div2 {
+       color: violet
+     }
+
+.ColorBlack {
+       color: rgba(255,0,0,0.3);
+     }
+
+#para1 {
+  color: green;
+}
+
+#para3 {
+
+
+
+
+
+

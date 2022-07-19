@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: chartreuse;
+            }
+            p {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 100px;
+                text-align: center;
+                color: white;
+                margin-top: 20px;;
+            }
+            p::before {
+                content: "☕";
+                margin-right: 20px;
+            }
+            p::after {
+                content: "☔";
+                margin-left: 20px;
+            }
+            p::first-line {
+                content : "☝";
+                margin-top: 20px;
+            }
+            p::selection {
+                content: "☼";
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello World</p>
+    </body>
+</html>

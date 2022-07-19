@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                background-color: lightgray;
+                height: 100vh;
+            }
+            nav {
+                background-color: aquamarine;
+                width: 100vw;
+                height: 50px;
+                position: fixed;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            nav > div {
+                margin-right: 30px;
+                background-color: azure;
+                padding: 6px;
+            }
+            aside.left-sidebar {
+                background-color: blanchedalmond;
+                position: fixed;
+                left: 0px;
+                top: 50px;
+                width: 250px;
+                height: calc(100h - 50px);
+            }
+            main {
+                margin-top: 50px;
+                margin-left: 230px;
+                padding: 20px;
+
+                display: flex;
+                flex-direction: row;
+
+            }
+            header, footer {
+                background-color: burlywood;
+                width: calc(100vw - 230px);
+                height: 50px;
+                margin-left: 230px;
+                margin-top: 50px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            aside.right-aside {
+                background-color: #77889988;
+                /* padding: 20px; */
+                min-height: 80vh;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </nav>
+            <aside class = "left-sidebar">
+                <h3>Left Sidebar</h3>
+                <ul>
+                    <li>First Link</li>
+                    <li>Second Link</li>
+                    <li>Third link</li>
+                </ul>
+            </aside>
+            <header>
+                <h1>This is the sample website</h1>
+            </header>
+            <main>
+                <div class ="main-left-side">
+                    <section>
+                        <article>
+                            <p>This is the content of the website</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ab dolore mollitia blanditiis facere, ipsa eos animi quibusdam labore ipsam officiis necessitatibus rerum doloribus expedita beatae inventore a, ea commodi.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vero ab delectus, in blanditiis obcaecati. Temporibus iure voluptas quia nihil ut similique itaque rerum animi debitis dolorem iusto, placeat numquam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sunt exercitationem quod nulla error doloribus autem, quo libero, necessitatibus magnam corrupti repellat odit, commodi ex repellendus perspiciatis neque sequi.</p>
+                        </article>
+                    </section>
+    
+                    <section>
+                        <article>
+                            <p>This is the content of the website</p>
+                        </article>
+                    </section>
+                </div>
+                <div class ="main-right-side">
+                    <aside class = "right-aside">
+                        <h3>Right Sidebar for showing ads</h3>
+                        <ul>
+                            <li>Ad 1</li>
+                            <li>Ad 2</li>
+                            <li>Ad 3</li>
+                            <li>Ad 4</li>
+                        </ul>
+                    </aside>
+                </div>
+                
+
+                
+               
+            </main>
+            <footer>
+                <p>This is the footer &copy;
+                    dreamers Batch;</p>
+            </footer>
+        </div>
+    </body>
+</html>

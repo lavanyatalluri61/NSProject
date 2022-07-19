@@ -1,0 +1,96 @@
+CSS part2: Selectors and Image related CSS
+###########################################
+Selectors:
+	Universal selector(*)
+	Element selectors(div,span,p,input...)
+	ID selector(#id)
+	class selector(.classname)
+Combinators:
+	space - child selector
+	>- Immediat child selector
+	+- Immediate sibling selector
+	~- General sibiling selector
+Pseudo Classes
+	::hover
+	::root
+	::first-child
+	::last-child
+	::only-child
+	::nth-child(n)
+	::nth-last-child(n)
+	::not(selector)
+	link related
+	  ::link
+	  ::active
+	  ::visited
+	form related
+	  ::required
+	  ::invalid
+	  ::focus
+	  ::valid
+	  ::checked
+	  ::disabled
+	  :empty
+Pseudo Elements:
+	::after
+	::before
+	::first-letter
+	::first-line
+	::selection
+
+Attribute selectors
+	[attribute]
+	[attribute=value]  equal to
+	[attribute~=value] contains one among many
+	[attribute!=value] equal to or starts with
+	[attribute^=value] starts with
+	[attribute$=value]  ends with
+	[attribute*=value]  contains
+
+css for images
+	object-fit
+	  cover
+	  fill
+	  contain
+	filter
+	  blur()
+	  brightness()
+	  contrast()
+	  grayscale()
+	  invert()
+	  opacity()
+	  saturate()
+	  sepia()
+	  hue-rotate()
+
+
+flexbox
+	concept of container and items
+	justify-content
+	align-Items
+css for flexbox containers:
+	flex-direction
+	flex
+	flex-flow(flex direction + flex wrap)
+	align-content (for controlling the look of multiple line of items)
+css for flexbox items:
+	order
+	align-self
+
+important Notes:
+################################################
+1. Which image related css can we use to preserve aspect ratio of the image?
+both content-fit:cover and contain
+but cover will do the cropping but will up completely
+contain will not do cropping but image will be shrinked.
+
+2. How to position an item in the center both vertically and horizontally using display flexbox?
+use this css onto the flexbox container
+display:flex;
+justify-content: center;
+align-items: center;
+
+
+flexbox frogyy: https://flexboxfroggy.com/
+sololearn
+dynamic flexbox demo: https://code.sololearn.com/Wqwc2gEQ7sR7/#

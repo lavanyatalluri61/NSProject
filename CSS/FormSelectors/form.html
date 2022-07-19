@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            body {
+                padding: 20px;
+            }
+            input:required {
+                border: 2px solid lightgrey;
+            }
+            input:invalid {
+                border: 2px solid red;
+            }
+            input:focus {
+                transform:scale(1);
+            }
+            input:valid {
+                border: 2px solid green;
+            }
+            input:checked {
+                transform: scale(1.5);
+            }
+            input:disabled {
+                background-color: black;
+            }
+            input:empty {
+                /* border-bottom: 5px solid black; */
+            }
+            a:visited {
+                /* color: brown; */
+            }
+            a:active {
+                /* color: green; */
+            }
+            a:link {
+                color: red;
+            }
+            input:hover {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required pattern = "[a-z@.]{1,n}"><br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" disabled><br><br>
+        
+            <label for="education">Education</label>
+            <label for="Matriculation">Matriculation</label>
+            <input type="checkbox" name = "Matriculation" id = "Matriculation">
+            <label for = "Intermediate">Intermediate</label>
+            <input type="checkbox" name = "Intermediate" id = "Intermediate">
+            <label for = "Graduation">Graduation</label>
+            <input type="checkbox" name = "Graduation" id = "Graduation">
+            <label for = "Post Graduation">Post Graduation</label>
+            <input type="checkbox" name = "Post Graduation" id = "Post Graduation"><br><br>
+
+            <!-- <input type="submit" value="submit"> -->
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+            <ul>
+                <li><a href="https://google.com" target="_blank">Google</a></li>
+                <li><a href="https://microsoft.com" target="_blank">Microsoft</a></li>
+                <li><a href="https://amazon.com" target="_blank">Amazon</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
