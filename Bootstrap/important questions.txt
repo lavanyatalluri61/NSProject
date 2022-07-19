@@ -1,0 +1,9 @@
+Important Notes
+####################################################
+
+1. how many columns are there in bootstrap grid?
+12
+
+https://getbootstrap.com/docs/4.4/examples/carousel/
+
+

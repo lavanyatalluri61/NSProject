@@ -1,0 +1,40 @@
+Git:
+Use case:
+1. Track file changes
+2. Going back in file history
+3. Collaborating with manu people on same project
+
+Git Stages:
+1. Untracked (new file), Modified (modifies existing one)
+2. Staging
+3. Commit
+
+Branching:
+Creating branches
+Merging Branches
+
+GitHub:
+1. Central Online Repository
+2. Easy Collaboration
+
+Working in GitHub:
+1. Push from local machine
+2. Pull from remote github
+
+Git:
+1. Installation
+2. Configuration(add name and mail)
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "john@example.com"
+
+
+In Powershell:
+git --version
+next config commands 
+create a folder and go to the corresponding folder
+copy the folder and in powershell cd "folder path"
+git init
+git status
+git add folder or file name
+git commit -m "message"
+git log (what changes we made in the file or folder will be displayed)
