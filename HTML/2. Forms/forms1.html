@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      #first_name {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Information:</legend>
+      <label for = "first_name" id = "first_name">First Name:</label> &nbsp;&nbsp;
+      <input type = "text" id = "first_name" name = "first_name" placeholder = "Eg: Mahi"><br><br>
+      <label for = "last_name">Last Name:</label> &nbsp;&nbsp;
+      <input type = "text" id = "last_name" name = "last_name" value = "Tal"></fieldset><br><br>
+      <label for = "cars">Choose a Car:</label> &nbsp;&nbsp;
+      <select id = "car" name = "car" <!--size = 2--> >
+        <option disabled selected value>-- select an option --</option>
+        <option value = "mar">Maruti</option>
+        <option value = "fer">Ferrari</option>
+        <option value = "nan"><!--selected-->Nano</option>
+        <option value = "fo">Ford</option>
+      </select><br><br>
+      <label for = "comment">Comment</label> &nbsp;&nbsp;
+      <textarea name = "comment" rows = "20" cols = "40" maxlength = "10" placeholder = "Only 10 characters allowed">
+        here we can enter what we want...
+      </textarea><br><br>
+      <button type = "button" style = "color : tomato; background-color : powderblue;" onclick = "alert('Clicked!!')">Click Me</button><br><br>
+      <label for = "langs">Choose a Language</label>
+      <input list = "langs" name = "langs">
+      <datalist id = "langs" >
+      <option value = "HTML">
+      <option value = "CSS">
+      <option value = "JavaScript">
+      <option value = "React JS">
+      </datalist>
+    </form>
+    
+    <form oninput = "z.value=parseInt(x.value)+parseInt(y.value)-parseInt(a.value)">
+      <label for = "Addition">Expression:</label> &nbsp;&nbsp;
+      <input type = "number" id = "x" value = "50" max = "100"> +
+      <input type = "number" id = "y" value = "100" step = "10"> -
+      <input type = "number" id = "a" value = "50" ReadOnly> = 
+      <output name = "z" for = "x y a"></output>
+    </form><br><br>
+    <form>
+     <label for= "pass">Password</label> &nbsp;&nbsp;
+     <input type = "password" id = "pwd" name = "pwd">
+    </form>
+  </body>
+</html>

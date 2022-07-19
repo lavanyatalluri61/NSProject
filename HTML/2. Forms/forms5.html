@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personal Information:</legend>
+            <label for="fn">First Name:</label> &nbsp;&nbsp;&nbsp;
+            <input type="text" id="first_name" name="first_name"  placeholder="Name"><br>
+            <label for="last_name">Last Name:</label> <br>
+            <input type="text"  id="last_name" name="last_name"  >
+            </fieldset>
+            <br ><br ><br >
+            <label for="cars">Choose a car:</label><br >
+            <select id="car" name="car" >
+                <option disabled selected value>-- select an option --</option>
+                <option value="mar" >Maruti</option>
+                <option value="fer">Ferrari</option>
+                <option value="nan" >Nano</option>
+                <option value="fo">Ford</option>
+            </select><br ><br ><br >
+            <label for="comment">Comment</label><br>
+            <textarea name="comment" rows="5" cols="5" maxlength="50" placeholder="only 10 characters allowed"></textarea>
+            <br><br>
+            <button type="button" style="color:tomato" onclick="alert('Clicked!!')">Click Me</button>
+            <br><br>
+            <input list="langs" name="langs">
+            <datalist id="langs">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="CSS3">
+                <option value="HTML5">
+                <option value="JS">
+                <option value="React">
+            </datalist>
+        </form>
+    </body>
+</html>
+
+

@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <table>
+        <thead>
+            <tr>
+                <th>Names</th>
+                <th>Roll Numbers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sushil</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Navin</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Rasik</td>
+                <td>53</td>
+            </tr>
+        </tbody>
+        </table> <br> <br>
+
+        <h1>List of medias</h1>
+    <ol>
+<li><img src="https://picsum.photos/id/123/200/300" alt="image 1" /></li>
+<li><video controls>
+    <source src ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+</video></li>
+<li><audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg" controls>
+</audio></li>
+    </ol>
+
+    </body>
+</html>
