@@ -21,6 +21,33 @@ Working in GitHub:
 1. Push from local machine
 2. Pull from remote github
 
+git remote add origin
+git branch -v
+
+git remote add origin https://github.com/lavanyatalluri61/NSProject.git
+git branch -M main
+git push -u origin main
+
+Doing open source contribution via giithub
+steps to collaborate
+1. clone the repo in your machine
+git clone https://github.com/lavanyatalluri61/NSProject
+2. create your own branch
+git checkout -b "branchname"
+3. Add the file changes in that branch and commit them
+4. push the branch to github
+git push origin branchname
+5. create a pull request(PR) using github
+
+6. Get the latest changes in master
+		// Commit the changes in your branch
+		git checkout master
+		git pull origin master
+		git checkout Alok-Branch
+		git merge master
+		git push origin Alok-branch
+
+
 Git:
 1. Installation
 2. Configuration(add name and mail)
