@@ -1,0 +1,42 @@
+JS Part1: Intro, History and Declaring Variables
+##################################################
+1995: Netscape, Brendan Eich - founder of JS
+Late 1990s: Dynamic HTML 
+2008: Chrome and V8 (written in c++)
+2009: nodejs (JS for server side development)
+2011: jQuery
+2012: JSON
+2013: MongoDB (JS for database work)
+2013: Proliferation of dozens of frameworks for frontend development (reacr, AngularJS, vue, EJS, webpack)
+MERN stack
+M - MongoDB
+E - Express (REST APIs on HTTP)
+R - React
+N - Nodejs
+
+webkit is for css
+v8 is for JS
+
+Problems with var:
+1. It is Redeclarable
+var a = 5;
+var a = true;
+2. var is function scope
+3. var is hoisted
+4. var is added as a property in window
+
+Actual name of javascript is Ecmascript 
+that's why JS versions have ES prefix.
+for example: 
+ES1995 or ES1
+ES2015 or ES6
+ES2016 or ES7
+TC39 committee inside ECMA is responsible for handling the language specification for JS.
+
+...
+ES2021 or ES12 Latest Phase
+ES2022 or ES13
+
+https://javascript.info/
+
+
