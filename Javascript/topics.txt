@@ -39,4 +39,37 @@ ES2022 or ES13
 
 https://javascript.info/
 
+########################################################
+JS-Part2
+
+Functions in JS:
+    - Ways of creating a function in JS
+        1. Funtion Declaration
+            fnction name() {
+                //function body
+            }
+        2. Function Expression
+            const name = function() {
+                //function body
+            }
+        3. Arrow Function
+            const name = () => {
+                //function body
+            }
+    - Handling Arguments in JS
+    -  Scope(Closure)
+    -  Hoisting for var and function declarations
+
+windows + shift + s -- shortcut to select the screenshot
+
+Important Points
+#####################################
+1. which one should you use among var, let and const?
+var shouldn't be used anymore. its not recommended.
+let - if the variables value will change
+const - if the variables value will never change
+
+2. angular, react js will helps you to create html n css programmatically. Deals with the frontend of the application.
+node js, express and MongoDB deals with the backend of the application.
+
 
