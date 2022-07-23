@@ -58,6 +58,10 @@ Functions in JS:
             }
     - Handling Arguments in JS
     -  Scope(Closure)
+        1. Global Scope
+        2. Function Scope
+        3. Block Scope
+            only followed by let and const but not for var
     -  Hoisting for var and function declarations
 
 windows + shift + s -- shortcut to select the screenshot
@@ -72,4 +76,60 @@ const - if the variables value will never change
 2. angular, react js will helps you to create html n css programmatically. Deals with the frontend of the application.
 node js, express and MongoDB deals with the backend of the application.
 
+3. Guess the output?
+function test() {
+    if(true) {
+        var t = 1;
+    }
+    console.log(t * 5);
+}
+test();
 
+A. No error
+
+4. Guess the output?
+function is_senior() {
+    {
+        const AGE_LIMIT = 60;
+    }
+    if(age > AGE_LIMIT) {
+        return true;
+    }
+    else {
+        return false;
+    }
+    
+}
+is_senior(58);
+
+A. error - AGE_LIMIT is not accessible outside Block
+
+5. What is the problem with this code?
+let MAX_AGE = 60;
+function is_senior() {
+    let MAX_AGE = 55;
+    if(age > MAX_AGE) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+is_senior(58);
+
+A. Yes, error - MAX_AGE is already defined outside of the function.
+
+6. What is the problem with this code?
+var MAX_AGE = 60;
+function is_senior() {
+    var MAX_AGE = 55;
+    if(age > MAX_AGE) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+is_senior(58);
+
+A. No Error. But it is not recommended to create duplicate variables
