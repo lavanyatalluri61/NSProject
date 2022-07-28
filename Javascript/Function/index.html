@@ -10,6 +10,13 @@
     <script src="./JS/scope.js"></script>
 </head>
 <body>
-    
+    <script>
+        let first = prompt("Enter first amount:");
+        let second = prompt("Enter second amount:");
+        first = parseFloat(first);
+        second = parseFloat(second);
+        const result = (first + second) * 79.95
+        alert(`${first}$+ ${second}$ = ${result.toFixed(2)}`);
+    </script>
 </body>
 </html>

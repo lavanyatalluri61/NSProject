@@ -133,3 +133,70 @@ function is_senior() {
 is_senior(58);
 
 A. No Error. But it is not recommended to create duplicate variables
+
+7. How will this code be interpretedby compiler?
+
+    i. 
+        add(10, 20)
+        function add(num1, num2) {
+            return num1 + num2;
+        } 
+    a:  function add (num1, num2) {
+            return num1 + num2;
+        } 
+        add(10,20);
+
+    ii.
+        function multiply_10(num) {
+            a = 10;
+            const result = num * a;
+            a = 0;
+            var a = 0;
+            return result;
+        }
+    a: 
+        function multiply_10(num) {
+            a = undefined;
+            const result = num * a;
+            a = 0;
+            var a = 0;
+            return result;
+        }
+
+8. Does let and const allow hoisting?
+No
+
+####################################################
+
+JS Part 3: Higher Order Functions, Call stack
+#############################################
+
+Higher order Functions
+    These are functions which return or take another fnction as Arguments
+
+Call Stack in JS:
+    What it is?
+        It's just an ordered list of function name which helps us see the execution trail
+    Why it is used?
+        It's used during debugging.
+
+#####################################################
+JS Part-4: DataTypes in JS
+
+Primitive Values (immutable)
+    Boolean Values
+    Null type 
+    undefined type
+    number type
+    bigint type
+    string type
+    symbol type
+Reference
+    Objects
+    Arrays
+    Maps
+    sets 
+
+What is the use of undefined type?
+
+
