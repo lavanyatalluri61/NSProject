@@ -188,6 +188,7 @@ Primitive Values (immutable)
     Null type 
     undefined type
     number type
+        64 bit double precision
     bigint type
     string type
     symbol type
@@ -198,5 +199,34 @@ Reference
     sets 
 
 What is the use of undefined type?
+1. is func a higher order function?
+function print() {
+    console.log("Hello World");
+}
+function func() {
+    return function() {
+        print();
+    }
+}
 
+A: Yes, beacuse func is returning a function
 
+2. does func have a valid callback?
+function print() {
+    console.log("Hello World");
+}
+function func() {
+    print();
+    callback();
+}
+A: No, because we not invoking callback in func
+
+3. does func have a valid callback?
+function print() {
+    console.log("Hello World");
+}
+function func(callback) {
+    print();
+    callback();
+}
+A: Yes

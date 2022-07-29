@@ -129,5 +129,43 @@ function salutation(name) {
 }
 salutation('Lavs');
 
+//Bigint type
+
+let a = 23;
+let b = Number.MAX_SAFE_INTEGER;
+console.log(b); //9007199254740991
+console.log(b + 2); //9007199254740992 (1 less than expected)
+
+// how to create bigint types
+let safe_b = 9007199254740991n;
+console.log(safe_b);
+console.log(safe_b + 2n);
+
+// let bignint_num = BigInt(689616895663189746489713);
+// // Typeof operator
+// console.log(typeof safe_b === 'bigint') //true
+
+//usecases
+//any situations where the number size is bigger than the number MAX_SAFE_INTEGER
+
+let huge_amount = 764183560736761061367n
+
+let amount_after_interest = huge_amount + (huge_amount * 12n * 10n) / 100n;
+console.log(amount_after_interest);
+
+//Symbol Type
+const sym1 = Symbol();
+console.log(sym1);
+
+const sym2 = Symbol('randomString');
+console.log(sym2);
+
+console.log(typeof sym1 === 'symbol');
+
+const obj = {
+    sym1: "some value"
+}
+
+
 
 
