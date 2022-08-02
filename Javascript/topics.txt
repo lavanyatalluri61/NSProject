@@ -230,3 +230,72 @@ function func(callback) {
     callback();
 }
 A: Yes
+
+4. What are closures in JS and why are they used?
+Closures asre code construct where inordrr to make something(variable/ function)
+private, we wrap it inside another function.
+Eg: 
+function closureFunction() {
+    let somePrivateVar = 0;
+    return function() {
+        //using somePrivateVar;
+    }
+}
+
+
+#################################################################################################
+JS Part -6: Arrays
+
+intro to Arrays
+    class
+    utility functions
+    functions
+    properties
+
+Array properties
+    array.length
+    array.isArray()
+
+array loop methods
+    Map
+    filter
+    reduce
+    forEach
+    some
+    every
+
+Mutation functions in array
+    array.push()
+    array.pop()
+    array.shift()
+    array.unshift()
+    array.slice()
+
+Arrow Functions
+    1. If single return statment then that return statement with curly braces can be ommitted.
+            Example: 
+            const add = (num1, num2) => {
+                return num1 + num2;
+            }
+            const add = (num1, num2) => num1 + num2;
+
+        2. If single argument then parenthesis can be ommitted.
+            Example:
+            const square = (num) => num * num;
+            const square = num => num * num;
+
+            
+Important Notes:
+############################################
+1. In arrays, index starts from zero.
+2. iterator function take a function as an Arguments
+and signature for those functions argument is like below:
+(item, index, arr) => {
+
+}
+
+2. please tell the o/p of the given code?
+new Array(10).fill(5).filter(item => item %2 === 0);
+a. arr is []
+b. arr is [5,5]
+c. arr is [5,5,5,5,5,5,5,5,5,5]

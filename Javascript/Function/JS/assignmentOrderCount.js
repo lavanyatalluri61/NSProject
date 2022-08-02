@@ -16,13 +16,13 @@ function some_other_code() {
 }
 some_other_code();
 order();
-console.log()
-const count = 0;
-function unknown() {
-    let c = count;
-    let k = c;
-    console.log(++k);
-}
-unknown()
-unknown()
+// console.log()
+// let count = 0;
+// function unknown() {
+//     // let c = count;
+//     // let k = c;
+//     console.log(++count);
+// }
+// unknown()
+// unknown()
 
