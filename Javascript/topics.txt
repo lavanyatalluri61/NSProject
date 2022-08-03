@@ -299,3 +299,11 @@ new Array(10).fill(5).filter(item => item %2 === 0);
 a. arr is []
 b. arr is [5,5]
 c. arr is [5,5,5,5,5,5,5,5,5,5]
+
+3. what are the difference b/w for loop and forEach loop?
+A. 
+i. forEach loop will execute for all items of the array always.
+    but for loop can be discontinued earlier.
+ii. we cannot break from forEach loop but we can break from for loop.
+iii. forEach loop will not modify the array content while iterating over it
+     but same will not applicable to for loop.
