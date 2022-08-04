@@ -307,3 +307,67 @@ i. forEach loop will execute for all items of the array always.
 ii. we cannot break from forEach loop but we can break from for loop.
 iii. forEach loop will not modify the array content while iterating over it
      but same will not applicable to for loop.
+
+
+###########################################################################################
+JS Part-7: Objects
+
+Objects 
+    Syntax of an object:
+        {
+            key1: value,
+            key2: value,
+            ..
+            ..
+        }
+    Basics
+        ways of accessing properties in an object
+            1. Dot notation
+                const obj = {name: "Lavs", age = 24}
+                obj.name //Lavs
+            2. [] square bracket notation
+                const obj = {name: "Lavs", age = 24}
+                obj["name"] //Lavs
+    Data Structures
+    Object class
+Object Properties and methods
+    object.keys()
+    object.values()
+    object.entries()
+    object.hasOwnProperty()
+
+###################################################################
+Important Notes
+
+1. Given this code
+ const cars = [
+    {brand: "Honda", make: "Jazz", year: 2018, 
+    owner : {
+        name: "Morpheus",
+        registration: "awe17898"
+    }},
+    {brand: "Maruthi", make: "Baleno", year: 2022,
+    owner : {
+        name: "Mortin",
+        registration: "awe1nks98"
+    }},
+    {brand: "Hyundai", make: "Seltos", year: 2020,
+    owner : {
+        name: "hbavh",
+        registration: "iwqgbf7279y"
+    }},
+    {brand: "Tata", make: "Harrier", year: 2019,
+    owner : {
+        name: "whefuo",
+        registration: "hqw7398"
+    }}
+ ]
+
+ write the code to access the year of making the tata car.
+
+ console.log(cars[3].year);
+
+ 2. owner registration baleno car?
+ console.log(cars[1].owner.registration);
+
+ 
