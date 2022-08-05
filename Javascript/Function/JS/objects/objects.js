@@ -167,6 +167,103 @@ const cars = [
 console.log(student2.subjects[1]); //{ faculty: 'siri', subject: 'Che' }
 console.log(student2.subjects[1].faculty); //siri
  
+//function inside object
+console.log("Function inside objects..")
+const data = {
+    nodes: 234,
+    print: function() {
+        console.log("the cuurent count of nodes is 234");
+    }
+}
+data.print();
+
+const obj = {
+    name: "mahi",
+    dept: {
+        faculty: "Mr. Trivesh",
+        name: "chemical engineering"
+    }
+}
+console.log(obj.dept.name);   //chemical engineering
+console.log(obj["dept"]["name"]);  //chemical engineering
+
+const obj2 = {
+    "some prop name": 245,
+    "851876eryiqgieb feqeq": 61239
+}
+console.log(obj2["some prop name"]);
+
+const obj3 = {
+    data: [
+        {
+        name: "rahim", 
+        age: 23, 
+        address: {
+            city: "jaisalmer"
+        }
+        },
+        {
+            name: "sugandh", 
+            age: 22, 
+            address: {
+                city: "indore"
+            }
+        }
+    ]
+}
+console.log(obj3.data[1]["address"]);   //{ city: 'indore' }
+console.log(obj3.data[1]["address"].city);    //indore
+console.log(obj3.data[1]["address"]["city"]);   //indore
+console.log(obj3["data"][1]["address"]["city"]);  //indore
+
+//Assignment1
+/**
+ * write a function to create an object which look like below
+ * 
+ * 
+ * const obj = {
+ * "1": 10,
+ * "2": 20,
+ * ..
+ * 
+ * "100": 100
+ * }
+ */
+//Keys
+console.log("assignment1..")
+function object_creator() {
+    let result = {};
+    for(let i = 0; i <100; i++) {
+       result[i] = i * 10; 
+    }
+    return result;
+}
+console.log(object_creator());
+
+//values
+const obje = {
+    name: "john",
+    age: 23,
+    city: "agra"
+}
+console.log(Object.keys(obje)); //[ 'name', 'age', 'city' ]
+console.log(Object.values(obje));  //[ 'john', 23, 'agra' ]
+console.log(Object.entries(obje));  //[ [ 'name', 'john' ], [ 'age', 23 ], [ 'city', 'agra' ] ]
+const is_city_prop = obje.hasOwnProperty('city');
+console.log(is_city_prop);
+
+//JS is very forgiving nature when it comes to undefined prop name
+const some_obj = {
+    age: 23
+}
+console.log(some_obj.someyhing_else); //undefined
+
+
+
+
+
+
+
 
 
 

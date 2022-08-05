@@ -370,4 +370,23 @@ Important Notes
  2. owner registration baleno car?
  console.log(cars[1].owner.registration);
 
- 
+ 3. when to use square bracket notation to access object properties in JS?
+ A. 1. The property is not a valid identifier(i.e; spaces, special characters)
+ Eg: 
+    const obj = {
+        "some prop name": 345,
+    }
+
+############################################################################################
+JS Part8: oops, Prototype, Prototype chain and JS Prototype Inheritance
+
+Prototype
+    __proto__
+
+'this' keyword
+
+
+#####################################################################
+Important points
+
+
