@@ -65,3 +65,5 @@ git status
 git add folder or file name
 git commit -m "message"
 git log (what changes we made in the file or folder will be displayed)
+git push origin Alok-branch
+

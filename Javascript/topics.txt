@@ -389,4 +389,19 @@ Prototype
 #####################################################################
 Important points
 
+1. what is the o/p of below code?
+    const obj = {
+        print: function() {
+            this.print();
+        }
+    }
+A. StackOverflow will happen and we will get an error.
+
+
+Article:
+
+Primitive vs Refrence: https://neetishop.medium.com/copying-objects-in-javascript-8590e2d45c4
+
+Map and reduce: https://www.youtube.com/watch?v=e-5obm1G_FY
+
 
