@@ -440,8 +440,16 @@ A. Error
     object.prototype is undefined
     Note: We do not use prototype on instances but only on classes.
 
-5. What is the doc class in array class?
+5. What is the top class in array class?
 A. Object class
+
+6. Given this object.
+    const obj = {
+        name: "john doe",
+        age: 34
+    };
+How can we create a fresh copy of this object 'obj'?
+A. const obj1 = Object.create(obj);
 
 
 
@@ -451,4 +459,68 @@ Primitive vs Refrence: https://neetishop.medium.com/copying-objects-in-javascrip
 
 Map and reduce: https://www.youtube.com/watch?v=e-5obm1G_FY
 
+#################################################################################################################
 
+JS Part9: Math, String, DataTypes
+
+Math
+    PI 
+    ceil(), floor(), round()
+    max, min 
+    random
+    abs 
+    exp 
+    sqrt
+    pow  
+
+String
+
+String.codePointAt()
+
+    Ways of creating a string
+        single quotes  ('hello world')
+        double quotes  ("hello world")
+        back quotes (`hello world`)
+
+    toLowerCase(), toUpperCase()
+    concate() 
+    includes() 
+    slice() 
+    substr() 
+    trim() 
+    split() *
+
+Date 
+    UTC Time format and IST 
+    Milliseconds elapsed 
+    getDate()
+    getHours()
+    getMinutes()
+    getSeconds()
+
+###############################################
+Important Notes
+
+1. Guess the o/p of this code.
+
+const arr = [20,-10,2.5,60];
+console.log(Math.max(...arr))?
+A. 60
+
+2. Given the code
+    const sentence = "I love to code";
+
+    Write a one-liner code to break this sentence into words array.
+
+A. const words = sentence.split(" ");  //['I', 'love', 'to', 'code']
+
+3. What is the difference between the two lines?
+    const date1 = Date("2022-08-11");
+    const date2 = new Date("2022-08-11");
+
+A. Date("2022-08-11") we are trying to parse the date into current local Time
+    typeof will be string
+    new Date("2022-08-11") we are trying to parse the date string but creating the 
+    date object 
+    This is the one we use to do operations on time.
+    typeof will be object

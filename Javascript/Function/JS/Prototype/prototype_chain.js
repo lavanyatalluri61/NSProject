@@ -29,8 +29,8 @@ console.log(arr.valueOf(Object));  //[ 1, 2, 3, 4, 5 ]
  *      -service: "low cost service"
  */
 
-
-function Car(wheels, steering) {
+console.log("Inheritance...")
+function Car() {
     this.wheels = 4;
     this.steering = 'right';
 }
@@ -39,16 +39,19 @@ const c1 = new Car();
 console.log(c1);
 
 function Honda() {
+    //Calling the Parent Constructor
+    Car.call(this);
     this.engine = "i-vtec";
     //__proto__ : Car;
 }
 
-//Honda.prototype = Object.create(Car.prototype);
-Honda.prototype.constructor === Car;
+Honda.prototype = Object.create(Car.prototype);
 const h1 = new Honda();
 console.log(h1);
 
 function Maruti() {
+    //Calling the Parent Constructor
+    Car.call(this);
     this.service = "Low Cost Service";
 }
 
