@@ -524,3 +524,97 @@ A. Date("2022-08-11") we are trying to parse the date into current local Time
     date object 
     This is the one we use to do operations on time.
     typeof will be object
+
+################################################################################################
+JS Part -10: BOM 
+
+BOM Link: https://developer.mozilla.org/en-US/docs/Web/API/Window/speechSynthesis
+
+
+BOM (Browser Object Model)
+    window object 
+        global variables
+        window.document object 
+        window.innerHeight/window.innerWidth 
+        window.open(), close(), moveTo(), resizeTo() 
+
+    window history 
+        back() 
+        forward() 
+        go() 
+        length() 
+    window.navigator 
+        userAgent 
+        appName, appVersion, appCodeName 
+        platform 
+        cookieEnabled 
+        online
+        geolocation 
+    window.speechSynthesis
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance("hello"))
+
+4. What's the difference b/w the below two lines?
+console.local("hi");
+window.console.local("hi");
+
+A. No, there is no difference
+
+5. Guess the o/p?
+var a = 10;
+console.log(++window.a);
+
+A. 11
+
+6. Guess the o/p?
+function some_func() {
+    var a = 20;
+    console.log(window.a);
+}
+some_func();
+
+7. How to find if a malicious website is accessing my cookies or not?
+
+A. window.navigator.cookieEnabled
+true -- accessing
+false -- not accessing
+
+Shallow copy link: https://neetishop.medium.com/copying-objects-in-javascript-8590e2d45c4
+
+###############################################################################################################
+JS Part-11: DOM 
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+DOM Basics
+    DOM is JS representation of HTML structure. 
+    HTML element and Node 
+    window.onload event to work with DOM 
+    HTML element
+        textContent
+        innerHTML
+
+DOM Selectors 
+    getElementByTagName()
+    getElementByClassName()
+    getElementById()
+    querySelector()
+    querySelectoeAll()
+
+DOM create
+    createElement()
+    appendChild()
+    createTextNode()
+
+
+###########################
+Important Questions
+
+1. why do we write script tag in the bottom of the body?
+A. So that we do DOM related operations only after the above HTML is loaded.
+    However its always recommended to do after the window.onload event. 
+
+
+
+
+
+

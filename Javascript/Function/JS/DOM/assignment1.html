@@ -1,0 +1,59 @@
+<!--
+    Write a code to dynamically generate an HTMl page with
+    printing beautiful table of 18 (20 times)
+
+    18 x 1 = 18
+    18 x 2 = 36
+    ..
+    ..
+    18 x 20 = 360
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        ul > li {
+            font-size: larger;
+            font-weight: bolder;
+            color: brown;
+            margin: 5px;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>18 x 1 = 18</li>
+        <li>18 x 2 = 36</li>
+        <li>18 x 3 = 54</li>
+    </ul> -->
+    <script>
+        //create a ul
+        const ul = document.createElement('ul');
+        document.body.appendChild(ul);
+
+        //create 20 li
+        
+        for (let i = 1; i <= 20; i++) {
+            
+            const li = document.createElement('li');
+            ul.appendChild(li);
+            
+            const li_text = document.createTextNode('18 x ' + i + '=' + (18 * i));
+            li.appendChild(li_text);
+        }
+    </script>
+</body>
+</html>
+

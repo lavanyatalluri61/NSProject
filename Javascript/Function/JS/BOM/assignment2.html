@@ -1,0 +1,31 @@
+<!--
+    create an HTML page where you are asking user a math quiz user prompt()
+    if the answer is incoreect then close the window.
+    if the answer is correct then alert() "good job"
+-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //alert("Hey Guys!");
+            // const name = prompt("Enter the name", '');
+            // console.log(name);
+
+            const answer = 160;
+            number = prompt("what is 8 * 20", '');
+            if(parseInt(number) === answer) {
+                alert("Good Job!");
+            }
+            else {
+                window.close();
+            }
+
+            /** const new_window = window.open();
+            new_window.resizeTo(400,400);
+            */
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         body{
+             background-color: skyblue;
+         }
+         ul > li:nth-child(1) {
+            color: red;
+         }
+     </style>
+ </head>
+ <body>
+    <div>
+        <h1 id = "heading">Website Heading</h1>
+        <p class = "para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sit deserunt voluptates iste? Obcaecati fugit commodi voluptate aspernatur, similique qui unde eaque incidunt cum fugiat excepturi ipsa culpa veritatis necessitatibus.</p>
+        <p class = "para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sit deserunt voluptates iste? Obcaecati fugit commodi voluptate aspernatur, similique qui unde eaque incidunt cum fugiat excepturi ipsa culpa veritatis necessitatibus.</p>
+        <div>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        //console.log("Hello");
+        //console.log(document.getElementById('heading').textContent);
+        function init() {
+            //Start DOM related code here..
+            const h1 = document.getElementById('heading');
+            console.log(h1.textContent);
+
+            //change the text
+            h1.textContent = "New Heading";
+            
+            //to get the reference of first li using querySelector
+            const first_li = document.querySelector('ul > li:nth-child(1)');
+            first_li.textContent = "Changed list item 1";
+            console.log(first_li);
+
+            //get the reference of all li tags
+            const li_items = document.getElementsByTagName('li');
+            console.log(li_items);
+
+            li_items[1].textContent = "changed via getElementByTagName.."
+
+            //get HTML items based on class name
+            const paras = document.getElementsByClassName('para');
+            console.log(paras);
+        }
+        window.onload = init;
+
+        // window.onload = function() {
+        //     //Start DOM related code here..
+        // }
+    </script>
+ </body>
+ </html>
+
+
+
+
+
+
