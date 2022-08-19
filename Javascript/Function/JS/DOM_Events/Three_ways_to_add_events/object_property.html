@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div id = "someDiv" onclick = "click_handler()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusamus sunt nobis cum fuga a deleniti doloremque corrupti. Quia quidem officiis quibusdam omnis porro consequuntur rerum quas dolores et quo?
+    </div>
+    <script>
+        function click_handler() {
+            console.log("click happened");
+        }
+        function init() {
+            const someDiv = document.getElementById('someDiv');
+            someDiv.onclick = click_handler;
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>
