@@ -678,3 +678,37 @@ A. The benefits of addEventListener are
 
 
 
+#########################################################################################
+Part-13: Event Bubbling vs Capture and Event Delegation
+    Event Bubbling vs Capture
+    Event Delegation
+        It's a way to utilize Event Bubbling and prevent ourselves from attaching 
+        eventListeners to all the child items.
+
+        We basically delegate, the task of event handling to the parent.
+
+        Example:  parent and child can be any html element 
+            <parent>
+            <child></child>
+            <child></child>
+            <child></child>
+            </parent>
+
+            parent.onclick = function(event) {
+                //use the event.target property to access the child items
+            }
+
+
+################################################################################
+Important Points
+
+1. Is event bubbling a default behavior?
+A. Yes, if we haven't specified anything then event bubbling will be default.
+
+2. How to stop event bubbling for a div element in a website?
+A. we can use event.stopPropagation() function.
+
+
+
+
+
