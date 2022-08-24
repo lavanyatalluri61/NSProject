@@ -698,6 +698,24 @@ Part-13: Event Bubbling vs Capture and Event Delegation
                 //use the event.target property to access the child items
             }
 
+Table of seconds:
+    10 milli = 1 centi 
+    10 centi = 1 deci
+    10 deci  = 1 second
+    10 second = 1 deca
+    10 deca	 = 1 hecto 
+    10 hecto = 1 kilo
+
+Type Casting
+    Explicit Type casting
+        String
+
+
+    Implicit Type Casting
+        Examples:
+            addition with string
+
+
 
 ################################################################################
 Important Points
@@ -708,6 +726,14 @@ A. Yes, if we haven't specified anything then event bubbling will be default.
 2. How to stop event bubbling for a div element in a website?
 A. we can use event.stopPropagation() function.
 
+3. Please share examples of Implicit type casting in JS
+A. 
+    1. String addition with other DataTypes
+        "abc" + 45 = "abc45"
+        true + '' = 'true'
+
+    2. Boolean implict type casting inside if()
+        if(null) -> if(Boolean(null)) -> if(false)
 
 
 

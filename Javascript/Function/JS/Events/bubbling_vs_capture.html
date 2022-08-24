@@ -45,16 +45,16 @@
             //Eventhough we clicked on the blue and green, the below code will execte this is known as Event Bubbling 
             parent.addEventListener('click', () => {
                 console.log("Red Parent Clicked");
-            })
+            }, true);
 
             child.addEventListener('click', () => {
                 console.log("Green Child Clicked");
-            })
+            }, true);
 
             grandChild.addEventListener('click', (event) => {
                 console.log("Blue Grand Child Clicked");
                 //event.stopPropagation();    // will stop bubbling and display only grandChild console
-            })
+            }, true);
         }
     </script>
 </body>
