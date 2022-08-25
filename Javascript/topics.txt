@@ -736,5 +736,94 @@ A.
         if(null) -> if(Boolean(null)) -> if(false)
 
 
+######################################################################
+JS Part-14: Async, callbacks and Promise
+
+Async JS
+    Synchronous vs Asynchronous JS
+    Problem with Synchronous JS 
+        UI blocking due to single threaded nature of JS
+
+callbacks
+    callback hell
+
+Promise 
+    Intro
+    Why Promise?
+
+
+#########################################################
+Important Topics 
+
+1. write a sample async code in JS
+A. We can use setTimeout function to simulate a async code.
+
+setTimeout(function() {
+    //anything done being asynchronously
+}, 0)
+
+2. Guess the output?
+let a = 10;
+
+setTimeout(function() {
+    a += 20;
+});
+console.log(a);
+
+A. 10
+
+3. Guess the output.
+
+let a = 10;
+function something(cb) {
+    cb();
+    console.log(a);
+}
+something(function() {
+    a = 20;
+    console.log(a);
+})
+A. 20 20 
+
+4. Guess the output.
+
+let a = 10;
+function something(cb) {
+    console.log(a);
+}
+something(function() {
+    a = 20;
+    console.log(a);
+})
+
+A. 10
+
+5. Guess the output
+
+let str = "abc";
+function something(cb) {
+    str += 'xyz';
+    cb(str + '123');
+}
+
+something(function() {
+    console.log(str);
+})
+
+A. abcxyz
+
+6. Guess the output
+
+let str = "abc";
+function something(cb) {
+    str += 'xyz';
+    cb(str + '123');
+}
+
+something(function(somestr) {
+    console.log(somestr);
+})
+
+A. abcxyz123
 
 
