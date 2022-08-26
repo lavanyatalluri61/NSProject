@@ -735,7 +735,8 @@ A.
     2. Boolean implict type casting inside if()
         if(null) -> if(Boolean(null)) -> if(false)
 
-
+imgur --- to upload images 
+datamuse -- api
 ######################################################################
 JS Part-14: Async, callbacks and Promise
 
@@ -827,3 +828,38 @@ something(function(somestr) {
 A. abcxyz123
 
 
+7. What is callback hell and how to avoid it?
+A. Callback hell is problematic situation when working with async code 
+    using callbacks. We end up with a code with deep nested callbacks which makes 
+    code maintainably a difficult task.
+
+    We can use Promises to avoid callback hells.
+
+8. Guess the output.
+
+const promise = new Promise((a, b) => {
+    b(25);
+    a(23);
+});
+
+promise.then(
+    (response) => {
+        console.log("All is well: " + response)
+    },
+
+    (response) => {
+        console.log("Something failed: " + response)
+    })
+A. Something failed: 25 
+
+9. Guess the output
+
+const promise = new Promise((a, b) => {
+    a("hello");
+});
+
+promise.then(
+    (response) => {
+        console.log(response)
+    })
+A. hello 
