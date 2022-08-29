@@ -863,3 +863,210 @@ promise.then(
         console.log(response)
     })
 A. hello 
+
+
+#######################################################################################
+JS Part 15: Try Catch, Async Await
+
+Try catch 
+    used for Error Handling 
+    Syntax:
+    try {
+        //error prone code here
+    } catch(error) {
+        //error handling code here
+    } finally {
+        //Always execute
+    }
+
+Catch block in Promise
+    some_promise 
+        .then(() => {
+            //some operation
+        })
+        .then(() => {
+            //some operation
+        })
+        .catch((error) => {  
+            //handle the error here
+        }) 
+        .finally(() => {
+
+        })
+
+Async Await 
+
+#####################################################################################
+Important Questions
+
+1. Guess the output?
+try {
+    const a = 23;
+    a += 2;
+    console.log(a);
+} catch(error) {
+    console.log(a);
+}
+
+A. undefined 
+Since a is declared inside the try block, 
+a is not accessible to catch block.
+
+2. Guess the output?
+
+let a = 10;
+try {
+    console.log(a);
+    a += 2;
+} catch(error) {
+    console.log(a);
+}
+console.log(a);
+
+A. 10 
+   12
+
+3. Guess the output?
+
+const a = 10;
+try {
+    console.log(a);
+    a += 2;
+} catch(error) {
+    console.log(a);
+}
+console.log(a);
+
+A. 10 
+   10
+   10
+Since a is declared outside the try block, 
+a is accessible to catch block.
+
+4. Guess the output?
+
+let s = 'a';
+try {
+    console.log(s);
+    s.concat('b');
+} catch(error) {
+    console.log(s);
+    s = s.concat('c');
+} finally {
+    s += 'd';
+}
+console.log(s);
+
+A. a 
+   a 
+   acd 
+
+5. Guess the output?
+
+new Promise((a) => {
+    a(10);
+})
+.then(val => {
+    console.log(val * 10);
+})
+.then(val => {
+    console.log(val * 20);
+})
+.catch((e) => {
+    console.log(a);
+})
+.finally(
+    console.log(a);
+}
+
+A. 100
+   NaN    //not returing any value in previous then block
+   undefined 
+
+6. Guess the output?
+
+new Promise((a) => {
+    a(10);
+})
+.then(val => {
+    console.log(val * 10);
+    return val * 10;
+})
+.then(val => {
+    console.log(val * 20);
+})
+.catch((e) => {
+    console.log(a);
+})
+.finally {
+    console.log(a);
+}
+
+A.  100
+    20000
+    undefined 
+
+7. Guess the output?
+
+new Promise((a) => {
+    a(10);
+})
+.then(val => {
+    console.log(val * 10);
+    return val * 10;
+})
+.then(val => {
+    console.log(val * 20);
+    val.NonExistingFunction();
+})
+.catch((e) => {
+    console.log("Catch Block");
+})
+.finally((a) => {
+    console.log("Finally Block");
+})
+
+A.  100
+    2000
+    Catch Block
+    Finally Block
+
+8. Guess the output?
+
+new Promise((a, b) => {
+    b(20);
+    a(10);
+})
+.then(val => {
+    console.log(val * 10);
+    return val * 10;
+})
+.then(val => {
+    console.log(val * 20);
+    val.NonExistingFunction();
+})
+.catch((e) => {
+    console.log("Catch Block");
+})
+.finally((a) => {
+    console.log("Finally Block");
+})
+
+A.  Catch Block 
+    Finally Block 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
