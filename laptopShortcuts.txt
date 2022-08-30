@@ -1,0 +1,26 @@
+to access taskbar applications: windows + serial no.
+to switch apps: alt + tab
+alt + esc
+windows + d --- desktop
+ctrl + y -- redo
+ctrl +z --- undo
+
+Open word
+alt + f4 -- to close application
+ctrl + f4 -- to close only document but app will be there
+
+to open taskmanager -- ctrl + shift + esc
+to cretae text: =rand(paranumber, para lines)
+to navigate to begining of the doc: ctrl + home
+to navigate to end of the doc: ctrl + end
+f5 -- find anything
+to navigate a word by word in para: ctrl + right arrow
+to select: shift + ctrl + right arrow
+triple click: to select entire para
+bold: ctrl + b 
+ctrl + i: italian
+ctrl + u: underline
+ctrl + ): to increase font size
+ctrl + (: to decrease font size
+
+

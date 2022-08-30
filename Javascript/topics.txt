@@ -895,6 +895,33 @@ Catch block in Promise
         })
 
 Async Await 
+    An async function is a function declared with the async keyword,
+    and the await keyword is permitted within it. The async and await 
+    keywords enable asynchronous, promise-based behavior to be written
+    in a cleaner style, avoiding the need to explicitly configure 
+    promise chains.
+
+
+JSON 
+    It's a data exchange language format based on JS object.
+    It's basically a string that looks exactly like a JS object.
+
+    Datatypes supported by JSON
+        Array
+        Objects
+        String 
+        Number 
+        Boolean 
+        Null 
+
+    JSON notation 
+    Syntax: 
+    {
+        "prop": value 
+
+    }
+    JSON.stringify()
+    JSON.parse()
 
 #####################################################################################
 Important Questions
@@ -1055,14 +1082,43 @@ new Promise((a, b) => {
 A.  Catch Block 
     Finally Block 
 
+9. What's the problem with this code?
 
+async function print_hello() {
+    return new Promise((a, b) => {
+        a("hello there");
+    })
+}
 
+const result = await print_hello_async();
+console.log(result);
 
+A.  This code has 2 problems..
+1. print_hello_async() doesn't need to have async keyword as 
+we are not doing any await operation inside.
+2. We are doing await operation in the global scope.
+   await operations require an async function wrapper.
 
+10. Guess the output?
 
+function wait() {
+    return new Promise((a, b) => {
+        setTimeout(() => {
+            a(20);
+        }, 3000);
+    })
+}
 
+async function func_async() {
+    const result = wait();
+    console.log(result);
+}
 
+func_async();
 
+A. const result = await wait();
+
+Use await inside func_async()
 
 
 
