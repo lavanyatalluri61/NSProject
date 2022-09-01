@@ -1144,15 +1144,16 @@ The version after ES6 are also called ES6+ versions
 
 Spread and rest operator(...)
 Newer for loops
-    for-in loops
-    for-of loops
+    for-in loops -- For objects
+        'in' keyword 
+    for-of loops  -- For arrays 
 Property shorthand
     syntax:
           var x = 0, y = 0
-          obj = {x, y} => {x: 0, y: 0}
+          obj = {x, y} => {x: 0, y: 0} 
 Destructruring
     In arrays
-    In In objects 
+    In objects 
 
 Getters and Setters 
 class
@@ -1225,9 +1226,67 @@ console.log({a: a.a, ...b, ...c});
 
 A. {a: 1, b: 2, c: 2}
 
+6. What are the ways to iterate over the properties of an object?
+A. There are 3 ways:
+    1. Object.keys() -> Returns all the keys of the object as an array 
+    2. Object.entries() -> returns all the key-value pairs in the object as an array 
+    3. for-in loop to ierate over the keys of an object. 
 
+7. Guess the output?
+const obj1 = {a:1, b: 2}
+const obj2 = {...obj1, d: 4};
+for(const key in obj2) {
+    console.log(obj2[key]);
+}
 
+A.  1 
+    2
+    4
 
+8. Guess the output?
+const arr = [{a:1}, {b:2}, {c:2}];
+const item = [...arr][2];
+
+console.log(item);
+for(const item of arr) {
+    console.log(item['a']);
+}
+
+A. {c:2}
+    1
+    undefined
+    undefined 
+
+9. Guess the output?
+const a = 1;
+const b = 2, c = 3;
+console.log({a,b,c});
+
+A. {a: 1, b: 2, c: 3}
+
+10. Guess the output?
+
+const {c} = {a: 1, b: 2, c: 3};
+console.log(c ** 2);
+
+A. 9
+
+11. Guess the output?
+
+const arr = ['a', 'b', 'c'];
+const obj = {a: 1, b: 2, c: 3};
+
+const [a0, a1, a2] = arr;
+const {a, b, c} = obj;
+
+console.log(a0.repeat(a));
+console.log(a1.repeat(b));
+console.log(a2.repeat(c));
+
+A. 
+    a 
+    bb 
+    ccc 
 
 
 
