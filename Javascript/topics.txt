@@ -1155,16 +1155,6 @@ Destructruring
     In arrays
     In objects 
 
-Getters and Setters 
-class
-     static methods
-     method overiding
-     super 
-     constructor 
-     inheritance
-this 
-    lexical scoping of this in arrow functions 
-
 
 ###############################################################
 Important Notes
@@ -1288,12 +1278,153 @@ A.
     bb 
     ccc 
 
+############################################################################
+JS Part-17: class
+
+Getters and Setters 
+class
+     static methods
+     method overiding
+     super 
+     constructor 
+     inheritance
+this 
+    lexical scoping of this in arrow functions 
+
+##############################################################################
+Important Points
+
+1. Why use setters and getters?
+A. When we know for sure that some property inside a class/ object is going to 
+be used for read/ write then it's helpful to implement them using Getters and Setters.
+
+Benefits:
+    1. It doesn't look any different  to the class/ object user than a normal object.
+    2. We can do validation in setters and getters 
+    3. We can do validation in setters before writing the value.
 
 
+2. Guess the output?
 
+const Obj = {
+    get prop() {return 10;},
+    set prop(value) {this.prop = value;}
+}
+console.log(Obj.prop);
+Obj.prop = 20;
+console.log(Obj.prop);
 
+A. 10
+Stackoverflow Error 
 
+3. Guess the output?
 
+const Obj = {
+    get prop() {return 10;},
+    set prop(value) {this._prop = value;}
+}
+console.log(Obj.prop);
+Obj.prop = 20;
+console.log(Obj.prop);
 
+A.  10
+    10
+
+4. Guess the output?
+
+const Obj = {
+    _prop: 10
+    get prop() {return this._prop;},
+    set prop(value) {this._prop = value;}
+}
+console.log(Obj.prop);
+Obj.prop = 20;
+console.log(Obj.prop);
+
+A.  10
+    20
+
+5. Guess the output?
+
+const Obj = {
+    get prop1() {return 'z'},
+    get prop2() {return 'c'},
+    get prop3() {return 'f'}
+}
+console.log(Obj.prop1);
+console.log(Obj.prop2);
+console.log(Obj.prop3);
+
+A.  z 
+    c 
+    f
+
+6. Guess the output?
+
+const Obj = {
+    get prop1() {
+        console.log(this.prop2);
+        return 'z';
+        },
+    get prop2() {return 'c'},
+    get prop3() {return 'f'}
+}
+console.log(Obj.prop1);
+console.log(Obj.prop2);
+console.log(Obj.prop3);
+
+A.  c 
+    z 
+    c 
+    f 
+
+7. Guess the output?
+
+class Person {
+    this.name = name;
+    this.age = age;
+}
+console.log(new Person('Jim', 28));
+
+A. Illegal
+
+8. Guess the output?
+
+class Person {
+    
+}
+console.log(new Person('Jim', 28));
+
+A. Person {}
+
+Empty person object without any properties 
+
+9. Guess the output?
+
+class Person {
+    constructor(n, a) {
+        this.name = n,
+        this.age = a;
+    }
+}
+console.log(new Person('Jim', 28));
+
+A. Person {name: 'Jim', age: 28}
+
+10. Guess the output?
+
+class Person {
+    constructor(n) {
+        this.name = n;
+    }
+
+    static name = 'Harry';
+}
+const person = new Person('Jim');
+console.log(person.name));
+console.log(Person.name));
+
+A.  Jim 
+    Harry
 
 
