@@ -1427,4 +1427,111 @@ console.log(Person.name));
 A.  Jim 
     Harry
 
+11. Guess the output?
+
+class A {}
+class B extends A {}
+const b = new B() ;
+
+A. Yes 
+
+12. Guess the output?
+
+class A {}
+class B extends A {
+    constructor() {
+        this.prop = 1;
+    }
+}
+const b = new B();
+
+A. Yes 
+
+13. Guess the output?
+
+class Person {
+    constructor(e) {
+        console.log('c');
+        console.log(e);
+    }
+}
+class Employee extends Person {
+    constructor() {
+        console.log('d');
+        super('e');
+    }
+}
+const e = new Employee();
+
+A.  d 
+    c 
+    e 
+
+14. Guess the output?
+
+let num = 10;
+class A {
+    constructor() {
+        num += 10;
+    }
+}
+class B extends A {
+    constructor() {
+        num += 10;
+    }
+}
+const a = new A();
+console.log(num);
+
+const b = new B();
+console.log(num);
+
+A.  20
+Super() is missing inside B's constructor 
+
+15. Guess the output?
+
+let num = 10;
+class A {
+    constructor() {
+        num += 10;
+    }
+}
+class B extends A {
+    constructor() {
+        num += 10;
+        super()
+    }
+}
+const a = new A();
+console.log(num);
+
+const b = new B();
+console.log(num);
+
+A.  20
+    40
+
+16. Guess the output?
+
+let str = 'hey';
+class A {
+    constructor() {
+        str += 'guys! ';
+    }
+class B extends A {
+    constructor() {
+        str += "What's ";
+        super();
+    } 
+class C extends B {
+    constructor() {
+        str += 'up';
+        super();
+    }
+}
+const c = new C();
+console.log(str);
+
+A. hey up what's guys!
 
